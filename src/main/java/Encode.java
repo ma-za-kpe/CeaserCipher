@@ -8,10 +8,10 @@ public class Encode {
     }
 
     public int getKey(){
-        return key;
+        return this.key;
     }
 
     public String getWord() {
-        return word;
+        return this.word;
     }
 }
