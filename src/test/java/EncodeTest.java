@@ -16,5 +16,10 @@ public class EncodeTest {
         Encode testEncode = new Encode(2, "maku");
         assertEquals(2, testEncode.getKey());
     }
-
+    //test for getWord() method
+    @Test
+    public void newEncode_getWord_maku() throws Exception {
+        Encode testEncode = new Encode(2, "maku");
+        assertEquals("maku", testEncode.getWord());
+    }
 }
