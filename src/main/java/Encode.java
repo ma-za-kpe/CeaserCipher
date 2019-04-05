@@ -1,8 +1,8 @@
-public class encode {
+public class Encode {
     private int key;
     private String word;
 
-    public encode(int key, String word){
+    public Encode(int key, String word){
         this.key = key;
         this.word = word;
     }
