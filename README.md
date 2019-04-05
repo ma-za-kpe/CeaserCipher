@@ -8,4 +8,14 @@
 
 ## BDD
 
+### 
+
+| INPUT  | ENCODED OUTPUT | DECODED OUTPUT |
+| ------------- | ------------- |  ------------- |
+| not string  | false  | false |
+| a  | c  | a  |
+| me  | og  | me  |
+| i love  | knqxg  | i love  |
+
+
 ## TESTS
