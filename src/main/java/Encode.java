@@ -22,9 +22,10 @@ public class Encode {
 
 
         StringBuilder sb = new StringBuilder();
-                String upperCase = word.toUpperCase();
+        String upperCase = word.toUpperCase();
+        String  removeSpace = upperCase.replace("\\s", "");
 
-        for (char c : upperCase.toCharArray()) {
+        for (char c : removeSpace.toCharArray()) {
             sb.append((char) (c + key));
         }
         return sb.toString();

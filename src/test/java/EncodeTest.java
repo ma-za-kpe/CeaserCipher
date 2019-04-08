@@ -53,4 +53,10 @@ public class EncodeTest {
         Encode testEncode = new Encode(2, "a");
         assertEquals("C", testEncode.encodeWord(2, "a"));
     }
+
+    @Test
+    public void newEncode_getWordWithSpace_maku_is_bea() throws Exception {
+        Encode testEncode = new Encode(2, "maku is bea");
+        assertEquals("C", testEncode.encodeWord(2, "a"));
+    }
 }
