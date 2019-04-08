@@ -55,8 +55,8 @@ public class EncodeTest {
     }
 
     @Test
-    public void newEncode_getWordWithSpace_maku_is_bea() throws Exception {
-        Encode testEncode = new Encode(2, "maku is bea");
-        assertEquals("C", testEncode.encodeWord(2, "a"));
+    public void newEncode_getWordWithSpace_i_love() throws Exception {
+        Encode testEncode = new Encode(2, "i love");
+        assertEquals("K NQXG", testEncode.encodeWord(2, "i love"));
     }
 }

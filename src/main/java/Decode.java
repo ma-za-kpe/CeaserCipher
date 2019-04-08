@@ -1,8 +1,9 @@
-public class Encode {
+public class Decode {
+
     private int key;
     private String word;
 
-    public Encode(int key, String word){
+    public Decode(int key, String word){
         this.key = key;
         this.word = word;
         if (!(this.word instanceof String)) {
@@ -18,17 +19,17 @@ public class Encode {
         return this.word;
     }
 
-    public String encodeWord(int key, String word) {
+    public String decodeWord(int key, String word) {
 
 
         StringBuilder sb = new StringBuilder();
         String upperCase = word.toUpperCase();
-        String noSpace = upperCase.replace("\\s", "");
+        Encode encode = new Encode(this.key, this.word);
 
-        for (char c : upperCase.toCharArray()) {
-            sb.append((char) (c + key));
+        for (char c : this.word.toCharArray()) {
+            sb.append((char) (c - key));
         }
-        return sb.toString().replace('"', ' ');
+        return sb.toString().toLowerCase().replace('\u001E', ' ');
 
     }
 }
