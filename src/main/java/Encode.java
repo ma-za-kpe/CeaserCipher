@@ -5,6 +5,9 @@ public class Encode {
     public Encode(int key, String word){
         this.key = key;
         this.word = word;
+        if (!(this.word instanceof String)) {
+//            throw new IllegalArgumentException("please enter a string", this.encodeWord(2,""));
+        }
     }
 
     public int getKey(){
@@ -13,5 +16,18 @@ public class Encode {
 
     public String getWord() {
         return this.word;
+    }
+
+    public String encodeWord(int key, String word) {
+
+
+        StringBuilder sb = new StringBuilder();
+                String upperCase = word.toUpperCase();
+
+        for (char c : upperCase.toCharArray()) {
+            sb.append((char) (c + key));
+        }
+        return sb.toString();
+
     }
 }
