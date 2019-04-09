@@ -20,5 +20,12 @@ Implement a Caesar cipher, both encoding, and decoding. The key is an integer fr
 
 ## SCREENSHOTS
 
+![alt text](/images/encode.png)
+
+![alt text](http://url/to/img.png)
+
+![alt text](http://url/to/img.png)
+
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

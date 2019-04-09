@@ -22,7 +22,6 @@ public class App {
             System.out.println("enter a number as key");
             Integer key = input.nextInt();
 
-            System.out.println(stringUserEntered + key);
             Encode encode = new Encode(key, stringUserEntered);
             String encodedString = encode.encodeWord(key, stringUserEntered);
             System.out.println(encodedString);
@@ -32,7 +31,6 @@ public class App {
         System.out.println("enter THE number as key");
         Integer decodeKey = input.nextInt();
 
-        System.out.println(stringUserEntered + key);
         Decode decode = new Decode(key, encodedString);
         String decodedString = decode.decodeWord(key, stringUserEntered);
         System.out.println("the decoded string is: " + decodedString);
