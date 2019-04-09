@@ -5,8 +5,8 @@ public class Encode {
     public Encode(int key, String word){
         this.key = key;
         this.word = word;
-        if (!(this.word instanceof String)) {
-//            throw new IllegalArgumentException("please enter a string", this.encodeWord(2,""));
+        if ((this.word == null)) {
+            throw new IllegalArgumentException("please enter a string");
         }
     }
 

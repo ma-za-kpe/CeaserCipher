@@ -1,5 +1,5 @@
 import com.sun.javaws.exceptions.InvalidArgumentException;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -38,13 +38,10 @@ public class EncodeTest {
 
 
 
-    @Test
-    void exceptionTesting() {
-        Throwable exception = assertThrows(IllegalArgumentException.class, () -> {
-            Encode testEncode = new Encode(2, "2");
-//            testEncode.encodeWord(2,"2");
-        });
-        assertEquals("please enter a string", exception.getMessage());
+    @Test(expected = IllegalArgumentException.class)
+
+    public void exceptionTesting() {
+            Encode testEncode = new Encode(2, "");
     }
 
     //get not string /////////////////////?????????????????????????/

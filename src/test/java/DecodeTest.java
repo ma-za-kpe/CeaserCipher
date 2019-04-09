@@ -1,8 +1,8 @@
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class DecodeTest {
+public class DecodeTest {
     //test for an instance of encode
     @Test
     public void newDecode_instantiatesCorrectly() throws Exception {
@@ -24,7 +24,7 @@ class DecodeTest {
     }
 
     @Test
-    void exceptionTesting() {
+   public void exceptionTesting() {
         Throwable exception = assertThrows(IllegalArgumentException.class, () -> {
             Decode testDecode = new Decode(2, "2");
 //            testEncode.encodeWord(2,"2");
