@@ -27,6 +27,16 @@ public class App {
             String encodedString = encode.encodeWord(key, stringUserEntered);
             System.out.println(encodedString);
 
+            ///DECODE THE TOP SECRET MESSAGE
+        //key
+        System.out.println("enter THE number as key");
+        Integer decodeKey = input.nextInt();
+
+        System.out.println(stringUserEntered + key);
+        Decode decode = new Decode(key, encodedString);
+        String decodedString = decode.decodeWord(key, stringUserEntered);
+        System.out.println("the decoded string is: " + decodedString);
+
 
     }
 }
